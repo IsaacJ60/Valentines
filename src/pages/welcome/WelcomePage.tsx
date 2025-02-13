@@ -32,6 +32,8 @@ export const WelcomePage: React.FC<nameProps> = ( {name, setName} ) => {
   return (
 
       <div className="welcome-page-container">
+
+
         <motion.div
       layout
       initial={{ y: 0, opacity: 0 }}

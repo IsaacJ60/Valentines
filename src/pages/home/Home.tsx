@@ -6,6 +6,7 @@ import { Animator, ScrollContainer, ScrollPage } from 'react-scroll-motion'
 import { batch } from 'react-scroll-motion'
 import { Fade, MoveOut, MoveIn, Sticky } from 'react-scroll-motion'
 import { useNavigate } from 'react-router-dom'
+import { useEffect } from 'react'
 
 interface nameProps {
   name: String;
@@ -20,6 +21,10 @@ export const Home: React.FC<nameProps> = ( {name, setName} ) => {
         navigate('/question');
     }
 
+    useEffect(() => {
+            globalThis.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+        }, []);
+
     name = String(name).charAt(0).toUpperCase() + String(name).slice(1);
     
   return (
@@ -29,6 +34,7 @@ export const Home: React.FC<nameProps> = ( {name, setName} ) => {
       exit={{ opacity: 0}}
       transition={{ duration: 1 }}
     >
+
         <div className='home-container'>
             <ScrollContainer>
                 <ScrollPage>

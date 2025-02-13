@@ -45,6 +45,7 @@
     cursor: pointer;
     transition: 0.3s;
     font-weight: 600;
+    font-family: "DM Sans", sans-serif;
   }
   
   .close-button:hover {

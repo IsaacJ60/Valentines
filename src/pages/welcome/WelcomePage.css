@@ -97,3 +97,24 @@
     }
 
 }
+
+.music-player {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    padding: 5px 10px;
+    z-index: 10;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    font-weight: 600;
+    transition: all 0.3 ease;
+    font-family: "DM Sans", sans-serif;
+    font-size: large;
+}
+
+.music-player:hover {
+    background-color: #ffc5e6;
+}

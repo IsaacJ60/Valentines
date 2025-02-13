@@ -65,7 +65,9 @@ export const Question: React.FC<nameProps> = ( {name, setName} ) => {
         <div>
        
 
-        <img className="image1-down" src={image5} />
+    
+<div className='question-container'>
+<img className="image1-down" src={image5} />
         <img className="image2-down" src={image2} />
         <img className="image3-down" src={image3} />
         <img className="image4-down" src={image4} />
@@ -78,7 +80,6 @@ export const Question: React.FC<nameProps> = ( {name, setName} ) => {
         <img className="image5" src={image5} />
         <img className="image6" src={image2} />
 
-<div className='question-container'>
     <ScrollContainer>
         <ScrollPage>
             <Animator animation={batch(Fade(), Sticky(), MoveIn(-100, 500), MoveOut(0, -500))}>

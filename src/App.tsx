@@ -6,13 +6,39 @@ import { Three } from './pages/happypage/Happy';
 import { Question } from './pages/question/Question';
 import { useState } from 'react';
 import { AnimatePresence } from 'framer-motion';
+import './App.css';
 
 export const App: React.FC = () => {
 
-    const [name, setName] = useState<String>('');
+  const [name, setName] = useState<String>('');
+  const [audio, setAudio] = useState<HTMLAudioElement | null>(null);
+  const [isPlaying, setIsPlaying] = useState<boolean>(false);
+  
+  const musicToggle = () => {
+    if (audio) {
+      if (isPlaying) {
+        audio.pause();
+        const newAudio = new Audio('https://audio.jukehost.co.uk/Zru1RJVZabt5ts0ZN0he5kNSCy8vyTOh');
+        setAudio(newAudio);
+      } else {
+        audio.play();
+      }
+      setIsPlaying(!isPlaying);
+    } else {
+      const newAudio = new Audio('https://audio.jukehost.co.uk/Zru1RJVZabt5ts0ZN0he5kNSCy8vyTOh');
+      newAudio.play();
+      setAudio(newAudio);
+      setIsPlaying(true);
+    }
+  };
+  
   
   return (
-    <AnimatePresence  >
+    <div className='app-container'>
+          <button onClick={musicToggle} className='music-player'>MUSIC</button>
+          <p className='credits-text'>Made with love, by <a href='https://www.isaacjiang.ca/' target="_blank" rel="noopener noreferrer">Isaac Jiang</a></p>
+
+      <AnimatePresence  >
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<WelcomePage name={ name } setName={ setName } />} />
@@ -22,6 +48,8 @@ export const App: React.FC = () => {
       </Routes>
     </BrowserRouter>
     </AnimatePresence>
+  </div>
+    
   );
 };
 

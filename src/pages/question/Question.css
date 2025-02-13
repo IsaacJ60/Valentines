@@ -369,3 +369,125 @@ img:hover {
         box-shadow: 0 30px 20px rgba(0, 0, 0, 0.1);
     }
 }
+
+img {
+    width: 20vw;
+    height: 20vw;
+    opacity: 50%;
+    transition: all 0.3s ease;
+}
+
+img:hover {
+    opacity: 90%;
+    box-shadow: 0 15px 30px rgba(255, 77, 109, 0.5);
+    transform: translateY(-20px);
+    scale: 1.05;
+}
+
+.image1 {
+    mask-image: linear-gradient(to left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .54) 50%); 
+    position:absolute;
+    left: 8vw;
+    top: 100px;
+    scale: 0.9;
+    opacity: 50%;
+}
+
+.image2 {
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .54) 30%); 
+    position:absolute;
+    left: 24vw;
+    top: 700px;
+    scale: 0.8;
+    opacity: 50%;
+}
+
+.image3 {
+    mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .54) 80%); 
+    position:absolute;
+    left: 70vw;
+    top: 200px;
+    scale: 0.8;
+    opacity: 50%;
+}
+
+.image4 {
+    mask-image: linear-gradient(to top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .54) 30%); 
+    position:absolute;
+    left: 30vw;
+    top: 30px;
+    scale: 0.95;
+    opacity: 40%;
+}
+
+.image5 {
+    mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .54) 30%); 
+    position:absolute;
+    left: 80vw;
+    top: 600px;
+    scale: 0.9;
+    opacity: 40%;
+}
+
+.image6 {
+    mask-image: linear-gradient(to top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .54) 30%); 
+    position:absolute;
+    left: 50vw;
+    top: 100px;
+    scale: 1.05;
+    opacity: 45%;
+}
+
+.image1-down  {
+    mask-image: linear-gradient(to left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .54) 50%); 
+    position:absolute;
+    left: 8vw;
+    top: 120%;
+    scale: 0.9;
+    opacity: 50%;
+}
+
+.image2-down  {
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .54) 30%); 
+    position:absolute;
+    left: 22vw;
+    top: 170%;
+    scale: 0.8;
+    opacity: 50%;
+}
+
+.image3-down  {
+    mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .54) 80%); 
+    position:absolute;
+    left: 70vw;
+    top: 125%;
+    scale: 0.8;
+    opacity: 50%;
+}
+
+.image4-down  {
+    mask-image: linear-gradient(to top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .54) 30%); 
+    position:absolute;
+    left: 30vw;
+    top: 110%;
+    scale: 0.95;
+    opacity: 40%;
+}
+
+.image5-down {
+    mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .54) 30%); 
+    position:absolute;
+    left: 80vw;
+    top: 175%;
+    scale: 0.9;
+    opacity: 40%;
+}
+
+.image6-down {
+    mask-image: linear-gradient(to top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .54) 30%); 
+    position:absolute;
+    left: 50vw;
+    top: 160%;
+    scale: 1.05;
+    opacity: 45%;
+}

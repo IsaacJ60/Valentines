@@ -16,17 +16,17 @@
     border: none;
     outline: none;
     background-color: #ffffff;
-    color: #ffffff;
+    color: #000000;
     font-size: 5rem;
     cursor: pointer;
     transition: scale 0.3s;
     font-weight: bold;
     box-shadow: 0 30px 80px rgba(0, 0, 0, 0.7);
-    background-image: url("https://i.postimg.cc/qMx53w1t/easymoza-LR.jpg");
+    /* background-image: url("https://i.postimg.cc/qMx53w1t/easymoza-LR.jpg");
     background-size:cover;
     background-repeat: no-repeat;
     background-position: center;
-    background-color: #ffffff;
+    background-color: #ffffff; */
     font-weight: 900;
 }
 
@@ -67,4 +67,24 @@
         scale: 1.05;
     }
 
+}
+.music-player {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    padding: 5px 10px;
+    z-index: 10;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    font-weight: 600;
+    transition: all 0.3 ease;
+    font-family: "DM Sans", sans-serif;
+    font-size: large;
+}
+
+.music-player:hover {
+    background-color: #ffc5e6;
 }
