@@ -1,0 +1,70 @@
+.home-container {
+    display: flex;
+    font-family: "DM Sans", sans-serif;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+
+}
+
+
+.home-button {
+    font-family: "DM Sans", sans-serif;
+    padding: 150px 50px;
+    border-radius: 100px;
+    border: none;
+    outline: none;
+    background-color: #ffffff;
+    color: #ffffff;
+    font-size: 5rem;
+    cursor: pointer;
+    transition: scale 0.3s;
+    font-weight: bold;
+    box-shadow: 0 30px 80px rgba(0, 0, 0, 0.7);
+    background-image: url("https://i.postimg.cc/qMx53w1t/easymoza-LR.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #ffffff;
+    font-weight: 900;
+}
+
+.home-button:hover {
+    scale: 1.05;
+}
+
+@media (max-width: 768px) {
+
+    .home-container {
+        display: flex;
+        font-family: "DM Sans", sans-serif;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.1rem;
+    
+    }
+    
+    
+    .home-button {
+        font-family: "DM Sans", sans-serif;
+        width: max-content;
+        padding: 70px 50px;
+        border-radius: 50px;
+        border: none;
+        outline: none;
+        background-color: #ffffff;
+        color: #292929;
+        font-size: 2rem;
+        cursor: pointer;
+        transition: scale 0.3s;
+        font-weight: normal;
+        box-shadow: 0 30px 80px rgba(255, 255, 255, 0.7);
+    }
+    
+    .home-button:hover {
+        scale: 1.05;
+    }
+
+}

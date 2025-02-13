@@ -1,26 +1,28 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { WelcomePage } from './pages/welcome/WelcomePage';
+import { Home } from './pages/home/Home';
+import { Three } from './pages/happypage/Happy';
+import { Question } from './pages/question/Question';
+import { useState } from 'react';
+import { AnimatePresence } from 'framer-motion';
 
-function App() {
+export const App: React.FC = () => {
+
+    const [name, setName] = useState<String>('');
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <AnimatePresence  >
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<WelcomePage name={ name } setName={ setName } />} />
+        <Route path="/home" element={<Home name={ name } setName={ setName } />} />
+        <Route path="/question" element={<Question name={ name } setName={ setName } />} />
+        <Route path="/happy" element={<Three />} />
+      </Routes>
+    </BrowserRouter>
+    </AnimatePresence>
   );
-}
+};
 
 export default App;

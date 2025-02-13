@@ -1,0 +1,371 @@
+.question-container {
+    display: flex;
+    font-family: "DM Sans", sans-serif;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    flex-direction: column;
+    padding: 20px;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+    opacity: 50%;
+    transition: all 0.3s ease;
+}
+
+img:hover {
+    opacity: 90%;
+    box-shadow: 0 15px 30px rgba(255, 77, 109, 0.5);
+    transform: translateY(-20px);
+    scale: 1.05;
+}
+
+.image1 {
+    mask-image: linear-gradient(to left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .54) 50%); 
+    position:absolute;
+    left: 8vw;
+    top: 100px;
+    scale: 0.9;
+    opacity: 50%;
+}
+
+.image2 {
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .54) 30%); 
+    position:absolute;
+    left: 24vw;
+    top: 700px;
+    scale: 0.8;
+    opacity: 50%;
+}
+
+.image3 {
+    mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .54) 80%); 
+    position:absolute;
+    left: 70vw;
+    top: 200px;
+    scale: 0.8;
+    opacity: 50%;
+}
+
+.image4 {
+    mask-image: linear-gradient(to top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .54) 30%); 
+    position:absolute;
+    left: 30vw;
+    top: 30px;
+    scale: 0.95;
+    opacity: 40%;
+}
+
+.image5 {
+    mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .54) 30%); 
+    position:absolute;
+    left: 80vw;
+    top: 600px;
+    scale: 0.9;
+    opacity: 40%;
+}
+
+.image6 {
+    mask-image: linear-gradient(to top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .54) 30%); 
+    position:absolute;
+    left: 50vw;
+    top: 100px;
+    scale: 1.05;
+    opacity: 45%;
+}
+
+.image1-down  {
+    mask-image: linear-gradient(to left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .54) 50%); 
+    position:absolute;
+    left: 8vw;
+    top: 120%;
+    scale: 0.9;
+    opacity: 50%;
+}
+
+.image2-down  {
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .54) 30%); 
+    position:absolute;
+    left: 22vw;
+    top: 170%;
+    scale: 0.8;
+    opacity: 50%;
+}
+
+.image3-down  {
+    mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .54) 80%); 
+    position:absolute;
+    left: 70vw;
+    top: 125%;
+    scale: 0.8;
+    opacity: 50%;
+}
+
+.image4-down  {
+    mask-image: linear-gradient(to top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .54) 30%); 
+    position:absolute;
+    left: 30vw;
+    top: 110%;
+    scale: 0.95;
+    opacity: 40%;
+}
+
+.image5-down {
+    mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .54) 30%); 
+    position:absolute;
+    left: 80vw;
+    top: 175%;
+    scale: 0.9;
+    opacity: 40%;
+}
+
+.image6-down {
+    mask-image: linear-gradient(to top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .54) 30%); 
+    position:absolute;
+    left: 50vw;
+    top: 160%;
+    scale: 1.05;
+    opacity: 45%;
+}
+
+.question-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.question-button-no {
+    font-family: "DM Sans", sans-serif;
+    padding: 40px 100px;
+    border-radius: 100px;
+    border: none;
+    outline: none;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: transform all 0.3s ease, box-shadow 0.3s ease;
+    font-weight: bold;
+    text-align: center;
+    z-index: 0;
+}
+
+.question-button-yes {
+    font-family: "DM Sans", sans-serif;
+    padding: 40px 100px;
+    border-radius: 100px;
+    border: none;
+    outline: none;
+    font-size: 3rem;
+    cursor: pointer;
+    transition: transform 0.1s ease-out, box-shadow 0.3s ease;
+    font-weight: bold;
+    text-align: center;
+    z-index: 1;
+}
+
+.question-button-yes {
+    background-color: #ff4d6d;
+    color: white;
+    box-shadow: 0 10px 20px rgba(255, 77, 109, 0.3);
+}
+
+.question-button-yes:hover {
+    transform: scale(1.1);
+    box-shadow: 0 15px 30px rgba(255, 77, 109, 0.5);
+}
+
+.question-button-no {
+    background-color: #ffffff;
+    color: #292929;
+}
+
+.question-button-no:hover {
+    transform: scale(0.9);
+}
+
+.valentine {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    transition: .5s ease;
+    flex-wrap: nowrap;
+    gap: 1vw;
+    transition-delay: 0.1s;
+}
+
+.valentine span {
+    transition-delay: 0.1s;
+    background: #111111;
+    width: 5vw;
+    height: 5vw;
+    display: block;
+    line-height: 5vw;
+    font-weight: bold;
+    color: #111111;
+    font-size: 2vw;
+    text-align: center;
+    transition: .5s ease;
+    border-radius: 2.5vw;
+    box-shadow: 0 30px 20px rgba(0, 0, 0, 0.1);
+}
+
+.valentine:hover {
+    gap: 0;
+}
+
+.clear-thing {
+    clear: both;
+}
+
+.valentine:hover span:nth-child(odd) {
+    transition-delay: 0.1s;
+    background: #ffffff;
+    color: #ff2644;
+    transform: skewY(-15deg);
+    border-radius: 0px;
+    font-size: 3rem;
+    box-shadow: 0 30px 20px rgba(0, 0, 0, 0.1);
+}
+
+.valentine:hover span:nth-child(even) {
+    transition-delay: 0.1s;
+    background: #ffc5e6;
+    color: #d60000;
+    border-radius: 0px;
+    transform: skewY(15deg);
+    font-size: 3rem;
+    box-shadow: 0 30px 20px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 1000px) {
+    .valentine span {
+        transition-delay: 0.1s;
+        background: #111111;
+        width: 5vw;
+        height: 5vw;
+        display: block;
+        line-height: 5vw;
+        font-weight: bold;
+        color: #111111;
+        font-size: 2vw;
+        text-align: center;
+        transition: .5s ease;
+        border-radius: 2.5vw;
+        box-shadow: 0 30px 20px rgba(0, 0, 0, 0.1);
+        /* cool effect */
+        transform: skewY(-15deg);
+        transition: .5s ease;
+        border-radius: 0px;
+        font-size: 3rem;
+    }
+}
+
+/* Mobile-friendly adjustments */
+@media (max-width: 768px) {
+
+    .question-buttons {
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+    }
+    
+    .question-button-no {
+        font-family: "DM Sans", sans-serif;
+        padding: 20px 50px;
+        border-radius: 40px;
+        border: none;
+        outline: none;
+        font-size: 3rem;
+        cursor: pointer;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .question-button-yes  {
+        font-family: "DM Sans", sans-serif;
+        padding: 20px 50px;
+        border-radius: 40px;
+        border: none;
+        outline: none;
+        font-size: 3rem;
+        cursor: pointer;
+        transition: box-shadow 0.3s ease;
+        font-weight: bold;
+        text-align: center;
+    }
+    
+    .question-button-yes {
+        background-color: #ff4d6d;
+        color: white;
+        box-shadow: 0 10px 20px rgba(255, 77, 109, 0.3);
+    }
+    
+    .question-button-yes:hover {
+        transform: scale(1.1);
+        box-shadow: 0 15px 30px rgba(255, 77, 109, 0.5);
+    }
+    
+    .question-button-no {
+        background-color: #ffffff;
+        color: #292929;
+        transition: all 0.3s ease;
+    }
+    
+    .question-button-no:hover {
+        transform: scale(0.9);
+    }
+
+    .valentine {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        transition: .5s ease;
+        flex-wrap:nowrap;
+        gap: 0px;
+        transition-delay: 0.1s;
+    }
+    
+    .valentine span {
+        transition-delay: 0.1s;
+        background: #111111;
+        width: 2.5rem;
+        height: 2.5rem;
+        display: block;
+        line-height: 2.5rem;
+        font-weight: bold;
+        color: #111111;
+        font-size: 2.5rem;
+        text-align: center;
+        transition: .5s ease;
+        border-radius: 2.5rem;
+    }
+    
+    .clear-thing {
+        clear: both;
+    }
+    
+    .valentine span:nth-child(odd) {
+        transition-delay: 0.1s;
+        background: #ffffff;
+        color: #ff2644;
+        transform: skewY(-15deg);
+        border-radius: 0px;
+        font-size: 3rem;
+        box-shadow: 0 30px 20px rgba(0, 0, 0, 0.1);
+    }
+    
+    .valentine span:nth-child(even) {
+        transition-delay: 0.1s;
+        background: #ffc5e6;
+        color: #d60000;
+        border-radius: 0px;
+        transform: skewY(15deg);
+        font-size: 3rem;
+        box-shadow: 0 30px 20px rgba(0, 0, 0, 0.1);
+    }
+}
