@@ -28,8 +28,8 @@ A beautiful, interactive 3D Valentine's desktop website featuring a custom Three
 
 1. **Clone the Repository**
 ```sh
-  git clone https://github.com/yourusername/valentine-3d-website.git
-  cd valentine-3d-website
+  git clone https://github.com/IsaacJ60/valentines.git
+  cd valentines
 ```
 
 2. **Install Dependencies**
