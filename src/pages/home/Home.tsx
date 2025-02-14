@@ -43,13 +43,8 @@ export const Home: React.FC<nameProps> = ( {name, setName} ) => {
                     </Animator>
                 </ScrollPage>
                 <ScrollPage>
-                    <Animator animation={batch(Fade(), Sticky(), MoveIn(100, 500), MoveOut(-100, -500))}>
-                    <h1>Are you ready to hear my second favour?</h1>
-                    </Animator>
-                </ScrollPage>
-                <ScrollPage>
                     <Animator animation={batch(Fade(), Sticky(), MoveIn(-100, 500), MoveOut(100, -500))}>
-                    <h1><i>TBH</i>, it's more of a question. <br/><br/> Welp, here goes nothing...</h1>
+                    <h1><i>TBH</i>, my second favour is more of a question. <br/><br/> Welp, here goes nothing...</h1>
                     </Animator>
                 </ScrollPage>
                 <ScrollPage>

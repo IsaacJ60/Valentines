@@ -32,6 +32,7 @@ export const WelcomePage: React.FC<nameProps> = ( {name, setName} ) => {
   return (
 
       <div className="welcome-page-container">
+        <p className="scroll-text">Scroll Down ↓</p>
 
 
         <motion.div

@@ -118,3 +118,21 @@
 .music-player:hover {
     background-color: #ffc5e6;
 }
+
+.scroll-text {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: "DM Sans", sans-serif;
+    font-size: 1.5rem;
+    color: #292929;
+    opacity: 80%;
+    z-index: 10;
+    opacity: 50%;
+    transition: all 0.3s ease;
+}
+
+.scroll-text:hover {
+    opacity: 100%;
+}
