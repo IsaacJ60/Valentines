@@ -81,3 +81,6 @@ Custom styles are written in `css` files found in `src\pages\[PAGE_NAME]`. Modif
 ## 📝 License
 
 This project is open-source and available under the **MIT License**.
+
+![Screenshot 2025-02-16 181121](https://github.com/user-attachments/assets/d116d81c-d0a3-4479-9a3f-276eaac9897b)
+
